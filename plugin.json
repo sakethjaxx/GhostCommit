@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ghostcommit",
+  "version": "0.1.0",
+  "description": "Semantic intent and hallucination auditor for AI diff-bombs: flags off-spec edits, deleted error handling, phantom imports and more, with a 3-line Diff Risk Score.",
+  "author": { "name": "Saketh Jaggaiahgari" },
+  "homepage": "https://github.com/sakethjaxx/GhostCommit",
+  "repository": "https://github.com/sakethjaxx/GhostCommit",
+  "license": "MIT",
+  "keywords": ["code-review", "git", "pre-commit", "ai-safety", "diff", "audit"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GhostCommit",
+        "shortDescription": "Audit AI-generated diffs for off-spec edits and silent regressions.",
+        "longDescription": "Compares your staged or uncommitted changes against the task you asked for. Flags unrelated files and helpers, deleted try/catch and guard clauses, dropped types, hardcoded secrets, hallucinated imports, truncation placeholders and weakened tests, then prints a 3-line summary with a color-coded Diff Risk Score. Report only: it never edits your code.",
+        "developerName": "Saketh Jaggaiahgari",
+        "category": "Productivity",
+        "capabilities": ["Read"],
+        "defaultPrompt": [
+          "Audit my uncommitted changes against what I just asked for",
+          "Review my staged diff for silent regressions before I commit"
+        ],
+        "brandColor": "#7C3AED"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ PY=$(command -v python || command -v python3) && \"$PY\" \"${CLAUDE_PLUGIN_ROOT}/hooks/capture_intent.py\"; } 2>/dev/null; exit 0",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

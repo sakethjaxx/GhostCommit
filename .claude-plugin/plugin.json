@@ -1,0 +1,11 @@
+{
+  "name": "ghostcommit",
+  "version": "0.1.0",
+  "description": "Semantic intent and hallucination auditor for AI diff-bombs: flags off-spec edits, deleted error handling, phantom imports and more, with a 3-line Diff Risk Score.",
+  "author": { "name": "Saketh Jaggaiahgari" },
+  "homepage": "https://github.com/sakethjaxx/GhostCommit",
+  "repository": "https://github.com/sakethjaxx/GhostCommit",
+  "license": "MIT",
+  "hooks": "./hooks/claude.json",
+  "keywords": ["code-review", "git", "pre-commit", "ai-safety", "diff", "audit"]
+}

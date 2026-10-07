@@ -1,0 +1,12 @@
+{
+  "name": "ghostcommit",
+  "owner": { "name": "Saketh Jaggaiahgari" },
+  "description": "GhostCommit: adversarial safety net for AI-generated diffs.",
+  "plugins": [
+    {
+      "name": "ghostcommit",
+      "source": "./",
+      "description": "Audit staged or uncommitted changes for off-spec edits and silent regressions; prints a color-coded Diff Risk Score."
+    }
+  ]
+}

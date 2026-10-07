@@ -1,0 +1,6 @@
+# GhostCommit auditing itself: the scanner's own pattern tables and the test fixtures
+# intentionally contain the very things it hunts (fake secrets, placeholders, ignores).
+ignore = [
+  "skills/ghostcommit/scripts/audit.py",
+  "tests/*",
+]
